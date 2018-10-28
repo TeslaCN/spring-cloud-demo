@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    config:
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        service-id: config-server
+  application:
+    name: client-demo
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:4321/eureka/
+server:
+  port: 5432
